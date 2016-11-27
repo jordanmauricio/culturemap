@@ -1,0 +1,1184 @@
+/* Tooltip container */
+.tooltip {
+    position: absolute;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 100;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/*****************		/BACK TO TOP 		*****************/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url(cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  z-index: 7;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.cd-container {
+  width: 90%;
+  max-width: 768px;
+  margin: 2em auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+
+
+
+
+.wrapper h1{
+	color: white;
+	text-align: center;
+	padding-top: 10%;
+	z-index: 2; 
+}
+
+
+/*****************		HEADER 		*****************/
+
+.mainHeader{
+	z-index: 1;
+	background: #6a6a6a; /* For browsers that do not support gradients */
+
+    -moz-box-shadow: inset 1px 2px 5px #000;
+	-webkit-box-shadow:1px 2px 5px #000;
+	box-shadow: 1px 2px 5px #000;
+}
+.mainHeader img{
+	position: absolute;
+	width: 130px;
+	top: 0%;
+	left: 1%;
+}
+
+.logo{
+	width: 20%;
+
+}
+.vislogo{
+	width: 20%;
+	float: left;
+	z-index: 2;
+	position: absolute;
+}
+
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right:5%; 
+    overflow: hidden;
+ 
+}
+
+#menu li {
+    float: right;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #2b2d3d;
+
+}
+li img:hover {
+    background-color: #5a5a5a;
+}
+
+
+
+
+/*****************		VISUALISATION 		*****************/
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #4a4a4a;
+  border-radius: 50%;
+  border-top: 16px solid #2b2d3d;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+.visExpl{
+	width: 50%;
+	margin: 0 auto;
+}
+.visExpl h1{
+	color: white;
+	text-align: center;
+}
+.visExpl p{
+	color: white;
+	text-align: center;
+}
+.vis{
+	padding-top: 5%;
+	width: 100%;
+	display: inline-block;
+}
+
+.vislist{
+	list-style-type: none;
+	display: block;
+    margin: 0;
+    padding: 0;
+	
+}
+
+#content{
+	width: 100vw;
+	height: 100vh;
+}
+
+#target{
+	position: fixed;
+	display: inline-block;
+	right: 10%;
+	top: 60%;
+	z-index: 1;
+	width: 30vh;
+	height: 30vh;
+	padding: 1% 1% 1% 1%;
+	background-color: #3d3d3d;
+	border-radius: 50%;
+	
+
+    -moz-box-shadow: inset 2px 4px 5px #000;
+	-webkit-box-shadow:2px 4px 5px #000;
+	box-shadow: 2px 4px 5px #000;
+}
+#target p{
+    text-align: center;
+    font-size: 1em;
+	color: white;
+	
+}
+#target h2{
+
+    text-align: center;
+    font-size: 1em;
+	color: white;
+	padding-left: 1%;
+	
+}
+#target h3{
+	text-align: center;
+    font-size: 2em;
+	color: white;
+}
+
+.targetExpl{
+	padding: 1 1 1 1;
+	height: 50%;
+}
+#dataAtak{
+	text-align: center;
+	position: relative;
+	 -moz-box-shadow: inset 2px 4px 5px #000;
+	-webkit-box-shadow:2px 4px 5px #000;
+	box-shadow: 2px 4px 5px #000;
+}
+#dataProef{
+	
+	text-align: center;
+	position: relative;
+	 -moz-box-shadow: inset 2px 4px 5px #000;
+	-webkit-box-shadow:2px 4px 5px #000;
+	box-shadow: 2px 4px 5px #000;
+}
+#dataRocks{
+	
+	text-align: center;
+	position: relative;
+	 -moz-box-shadow: inset 2px 4px 5px #000;
+	-webkit-box-shadow:2px 4px 5px #000;
+	box-shadow: 2px 4px 5px #000;
+}
+#dataFriends{
+	
+	text-align: center;
+	position: relative;
+	 -moz-box-shadow: inset 2px 4px 5px #000;
+	-webkit-box-shadow:2px 4px 5px #000;
+	box-shadow: 2px 4px 5px #000;
+}
+#dataBolwerk{
+	
+	text-align: center;
+	position: relative;
+	
+}
+.circle {
+	border-radius: 1%;
+	 -moz-box-shadow: inset 1px 2px 5px #000;
+	-webkit-box-shadow:1px 2px 5px #000;
+	box-shadow: 1px 2px 5px #000;}
+
+#advancedAtak {	
+	background-color: #2b2d3d;
+	
+
+}
+#advancedAtak img{
+	width: 100%;
+}
+#advancedProef {	
+	background-color: #2b2d3d;
+	
+}
+#advancedProef img{
+	width: 100%;
+}
+#advancedRocks {	
+	background-color: #2b2d3d;
+	
+}
+#advancedRocks img{
+	width: 100%;
+}
+#advancedFriends {	
+	background-color: #2b2d3d;
+	
+}
+#advancedFriends img{
+	width: 100%;
+}
+#advancedBolwerk {	
+	background-color: #2b2d3d;
+	
+}
+#advancedBolwerk img{
+	width: 100%;
+}
+#advancedConcordia {	
+	background-color: #2b2d3d;
+	
+}
+#advancedConcordia img{
+	width: 100%;
+}
+#advancedWilmink {	
+	background-color: #2b2d3d;
+	
+}
+#advancedWilmink img{
+	width: 100%;
+}
+#advancedWolff {	
+	background-color: #2b2d3d;
+	
+}
+#advancedWolff img{
+	width: 100%;
+}
+
+#extraExpl{
+	background-color:  #2b2d3d;
+	height: 100%;
+	padding: 1 1 1 1;
+}
+#extraExpl p, h3{
+	color: #ffffff;
+	text-align: center;
+	font-size: 100%;
+}
+
+
+
+/*****************		API  Content Styling 		*****************/
+
+
+.container{
+	background-color: #2b2d3d;
+	width:100%;
+	margin-bottom:5%;
+}
+
+.box {
+	width:85%;
+	margin:0 auto;
+}
+
+.box img {
+  	float: left;
+  	opacity: 0.7;
+  	width: 100%;
+  	padding-bottom: 2%;
+ 
+  	
+}
+
+.top{
+	background-color:#2b2d3d;
+	text-align:center;
+	width: 100%;
+	margin: 0 auto;
+	
+
+  	
+}
+
+.mid {
+	margin: 0 auto;
+	text-align:center;
+	background-color: #2b2d3d;
+	color:#fff;
+	padding-bottom: 2%; 
+}
+
+#title{
+	height: 10%;
+	font-size:100%;
+	font-weight:800;
+	color:#fff;
+	display:inline;
+	padding-right:4%;
+	margin-top: 2%;
+}
+
+
+
+
+#count{
+	color:#fff;
+	display:inline-block;
+	line-height: 30px;
+	height:30px;
+	width:30px;
+
+	moz-border-radius:50%;
+	border-radius:50%;
+
+	background-color: #3b5998;
+	text-align:center;
+
+
+
+}
+
+#weather {
+	color:#fff;
+	display:inline-block;
+	padding: 5px 10px;
+	margin-left:15px;
+	moz-border-radius:4px;
+	border-radius:4px;
+	background-color: #e74c3c;
+	text-align:center;
+}
+
+#location, #time{
+	font-weight:400px;
+	display:inline;
+}
+
+#desc{
+	background-color: #fff;
+	font-size:100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+
+.triback{
+	width: 100vw;
+	height: 100vh;
+}
+
+/*****************		ABOUT    		*****************/
+.mainHeaderAbout{
+	z-index: 1;
+	background: white; /* For browsers that do not support gradients */
+}
+
+#menuAbout ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right:5%; 
+    overflow: hidden;
+ 
+}
+
+#menuAbout li {
+    float: right;
+}
+
+#menuAbout li a {
+    display: block;
+    color: #5a5a5a;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 25px;
+    text-decoration: none;
+}
+#menuAbout li a:hover {
+    background-color: #5a5a5a;
+    color: white;
+}
+li img:hover {
+    background-color: #cd3333;
+}
+
+.aboutB{
+	background-color: white;
+}
+
+.contentAbout{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 1%;
+}
+
+.groupImg{
+	margin: 0 auto;
+	width: 100%;
+}
+.groupImg img{
+	width: 100%;
+
+}
+.aboutText{
+ width: 80%;
+ margin: 0 auto;
+}
+
+
+.aboutText h1, h2, p{
+	color: #5a5a5a;
+}
+
+
+
+
+.aboutText ul{
+	list-style-type: none;
+    margin: 0 auto; 
+    padding: 0;
+}
+
+.aboutText li{
+	color: #5a5a5a;
+}
+
+.makingOf{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.makingOf{
+	color: white;
+	}
+
+
+
+/***************** THIS THE CODE FOR THE DESKTOP	*****************/
+/*****************									*****************/
+/*****************									*****************/
+/*****************									*****************/
+@media screen and (min-width: 821px) {
+
+body{
+	background-color: #5a5a5a;
+    margin: 0;
+	padding:0;
+	height: 100vh;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+.map {
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+}
+
+.map img{
+	position: relative;
+	margin-top: 0.5%;
+	display: block;
+
+}
+
+.chooseatak img{
+	position: absolute;
+	width: 20%;
+	top: 57%;
+	left: -1%;
+	
+}
+
+.choosefriends img{
+	position: absolute;
+	margin: 0 auto;
+	width: 7.5%;
+	top:45%;
+	left: 68.5%;
+	z-index: 5;
+}
+.chooseproef img{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 25%;
+	left:51.5%;
+	z-index: 4;
+}
+.choosebolwerk img{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 57.5%;
+	left:38%;
+	z-index: 4;
+}
+.chooserockz img{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 27%;
+	left:74%;
+	z-index: 4;
+}
+.choosewilmink img{
+	position: absolute;
+	width: 19.4%;
+	margin: 0 auto;
+	top: 31.5%;
+	left: 0%;
+	z-index: 4;
+}
+.chooseconcordia img{
+	position: absolute;
+	width: 8%;
+	margin: 0 auto;
+	top: 37%;
+	left:47%;
+	z-index: 4;
+}
+.choosewolff img{
+	position: absolute;
+	width: 9%;
+	margin: 0 auto;
+	top: 47%;
+	left:31%;
+	z-index: 4;
+}
+
+.expl{
+	position: absolute;
+	width: 46%;
+	z-index: 2;
+	left: 0%;
+	top: 0%; 
+	background-color: #2b2d3d;
+	padding: 1% 1% 0% 1%;
+}
+
+.expl p{
+	color: #fff;
+	padding: 1 1 1 1;
+
+}
+.legend{
+	position: absolute;
+	width: 25%;
+	z-index: 8;
+	right: 0%;
+	top: 75%; 
+	background-color: #2b2d3d;
+	padding: 1% 1% 1% 1%;
+}
+
+p.red{
+	color: #cc3333;
+}
+
+p.blue{
+	color: #bcbcbc;
+}
+.expl2{
+	position: absolute;
+	width: 40%;
+	z-index: 15;
+	right: 2%;
+	top: 80%; 
+	background-color: #2b2d3d;
+	opacity: 0;
+	padding: 1% 0% 1% 0%;
+	
+}
+
+.expl2 p{
+	color: #fff;
+	padding: 1 1 1 1;
+	opacity: 0;
+
+}
+
+.mobileChoice{
+	visibility: hidden;
+}
+
+}
+
+/***************** THIS THE END OF DESKTOP 			*****************/
+/*****************									*****************/
+/*****************									*****************/
+/*****************									*****************/
+
+
+/***************** THIS THE CODE FOR THE Phones 		*****************/
+/*****************									*****************/
+/*****************									*****************/
+/*****************									*****************/
+@media screen and (max-width: 820px) {
+
+body{
+
+	background-color: #5a5a5a;
+    margin: 0;
+	padding:0;
+	height: 100vh;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*****************		HEADER 		*****************/
+
+.mainHeader{
+	z-index: 1;
+	height: 10%;
+	background: #6a6a6a; /* For browsers that do not support gradients */
+   
+
+    -moz-box-shadow: inset 1px 2px 5px #000;
+	-webkit-box-shadow:1px 2px 5px #000;
+	box-shadow: 1px 2px 5px #000;
+}
+.mainHeader img{
+	position: absolute;
+	width: 130px;
+	left: 1%;
+}
+
+.logo{
+	width: 20%;
+
+}
+.vislogo{
+	width: 20%;
+	float: left;
+	z-index: 2;
+	position: absolute;
+}
+
+
+.map {
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+}
+
+.map img{
+	width: 100%;
+	position: relative;
+	
+	display: block;
+
+}
+.chooseatak img{
+	position: absolute;
+	width: 20%;
+	top: 55%;
+	left: -1%;
+	
+}
+
+.choosefriends img{
+	position: absolute;
+	margin: 0 auto;
+	width: 7.5%;
+	top:45%;
+	left: 68.5%;
+	z-index: 5;
+}
+.chooseproef img{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 25%;
+	left:51.5%;
+	z-index: 4;
+}
+.choosebolwerk img{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 57.5%;
+	left:38%;
+	z-index: 4;
+}
+.chooserockz img{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 27%;
+	left:74%;
+	z-index: 4;
+}
+.choosewilmink img{
+	position: absolute;
+	width: 19.4%;
+	margin: 0 auto;
+	top: 31.5%;
+	left: 0%;
+	z-index: 4;
+}
+.chooseconcordia img{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 36%;
+	left:47%;
+	z-index: 4;
+}
+.choosewolff img{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 47%;
+	left:29%;
+	z-index: 4;
+}
+
+.chooseatak2{
+	position: absolute;
+	width: 20%;
+	top: 55%;
+	left: -1%;
+	
+}
+
+.choosefriends2{
+	position: absolute;
+	margin: 0 auto;
+	width: 7.5%;
+	top:45%;
+	left: 68.5%;
+	z-index: 5;
+}
+.chooseproef2{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 25%;
+	left:51.5%;
+	z-index: 4;
+}
+.choosebolwerk2{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 57.5%;
+	left:38%;
+	z-index: 4;
+}
+.chooserockz2{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 27%;
+	left:74%;
+	z-index: 4;
+}
+.choosewilmink2{
+	position: absolute;
+	width: 19.4%;
+	margin: 0 auto;
+	top: 31.5%;
+	left: 0%;
+	z-index: 4;
+}
+.chooseconcordia2{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 36%;
+	left:47%;
+	z-index: 4;
+}
+.choosewolff2{
+	position: absolute;
+	width: 12%;
+	margin: 0 auto;
+	top: 47%;
+	left:29%;
+	z-index: 4;
+}
+
+.expl{
+	position: absolute;
+	width: 40%;
+	z-index: 8;
+	right: 2%;
+	top: 65%; 
+	background-color: #2b2d3d;
+	opacity: 0;
+	padding: 1% 1% 1% 1%;
+}
+
+.expl p{
+	color: #fff;
+	padding: 1 1 1 1;
+
+}
+
+p.red{
+	color: #cc3333;
+}
+
+p.blue{
+	color: #bcbcbc;
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right:2%; 
+    overflow: hidden;
+ 
+}
+
+#menu li {
+    float: right;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #2b2d3d;
+
+}
+li img:hover {
+    background-color: #5a5a5a;
+}
+
+
+
+.expl{
+	visibility: hidden;
+	height: 0;
+}
+.legend{
+	visibility: hidden;
+	height: 0;
+}
+.expl2{
+	position: absolute;
+	width: 90%;
+	z-index: 2;
+	right: 5%;
+	left: 5%;
+	top: 10%; 
+	background-color: #2b2d3d;
+	opacity: 0.8;
+	padding: 1% 1% 1% 1%;
+	
+}
+
+.expl2 p{
+	color: #fff;
+}
+
+.legend2{
+	position: absolute;
+	width: 25%;
+	z-index: 8;
+	right: 0%;
+	top: 75%; 
+	background-color: #2b2d3d;
+	opacity: 0.9;
+	padding: 1% 1% 1% 1%;
+}
+p.red{
+	color: #cc3333;
+}
+
+p.blue{
+	color: #bcbcbc;
+}
+
+.map {
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+	opacity: 0.2;
+}
+.map img{
+	width: 100$;
+}
+
+.wrapper{
+	padding-top: 50%;
+}
+.wrapper h1{
+	color: white;
+	text-align: center;
+	padding-top: 0%;
+	z-index: 2; 
+}
+.facebook-doohickey-mobile{
+	margin: 0 auto;
+	padding-left: 40%;
+}
+
+.mobileChoice{
+	width: 100%;
+	margin: 0 auto;
+	padding: 2 2 2 2;
+
+}
+
+.mobileButtons h3{
+	color: #fff;
+
+}
+
+.mobileButtons a:hover{
+	opacity: 0.5;
+}
+
+.atakButton{
+	background-color: #cc3333;
+	width: 48%;
+	float: left;
+	text-align: center;
+	border: solid  #2b2d3d;
+}
+.wilminkButton{
+	background-color: #bcbcbc;
+	width: 48%;
+	float: left;
+	text-align: center;
+	border: solid  #2b2d3d;
+}
+.wolffButton{
+	background-color: #bcbcbc;
+	width: 48%;
+	float: left;
+	text-align: center;
+	border: solid  #2b2d3d;
+}
+.bolwerkButton{
+	background-color:#cc3333;
+	width: 48%;
+	float: left;
+	text-align: center;
+	border: solid  #2b2d3d;
+}
+.concordiaButton{
+	background-color: #bcbcbc;
+	width: 48%;
+	float: left;
+	text-align: center;
+	border: solid  #2b2d3d;
+}
+.proefButton{
+	background-color:#cc3333;
+	width: 48%;
+	float: left;
+	text-align: center;
+	border: solid  #2b2d3d;
+}
+.friendsButton{
+	background-color: #cc3333;
+	width: 48%;
+	float: left;
+	text-align: center;
+	border: solid  #2b2d3d;
+}
+.rocksButton{
+	background-color: #cc3333;
+	width: 48%;
+	float: left;
+	text-align: center;
+
+	border: solid  #2b2d3d;
+}
+
+#desc{
+	background-color: #fff;
+	font-size:100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+.container{
+	margin-top: 10%; 
+	background-color: #2b2d3d;
+	width:100%;
+	margin-bottom:5%;
+}
+
+
+.visDetail{
+	width: 50%;
+}
+.visExpl{
+	width: 80%;
+	margin: 0 auto;
+}
+.visExpl h1{
+	color: white;
+	text-align: center;
+}
+.visExpl p{
+	color: white;
+	text-align: center;
+}
+.vis{
+	padding-top: 5%;
+	width: 100%;
+	display: inline-block;
+}
+
+.vislist{
+	list-style-type: none;
+	display: block;
+    margin: 0;
+    padding: 0;
+	
+}
+
+
+}

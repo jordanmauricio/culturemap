@@ -1,0 +1,62 @@
+{
+    "venues":[
+        {
+            "Atak":{
+                "id":"1232627726762039",
+                "name":"Basic Grooves XXL | 21st Anniversary - Indoor Festival",
+                "date":"2nd of Sep 2016",
+                "time":"22:00",
+                "cover":"http://antertain.org/processing/imgs/atak.png"
+            },
+            "Wilmink":{
+                "id":"233829943646430",
+                "name":"Fuad Hassen - Pareidolia",
+                "date":"22nd of Sep 2016",
+                "time":"20:30",
+                "cover":"http://antertain.org/processing/imgs/wilmink.png"
+            },
+            "Wolff":{
+                "id":"1749563398658673",
+                "name":"Ladies Week: Absolutely Fabulous: The Movie",
+                "date":"14th of Jul 2016",
+                "time":"20:00",
+                "cover":"http://antertain.org/processing/imgs/wolff.png"
+            },
+            "Concordia":{
+                "id":"735169313281758",
+                "name":"Opening expositie: A tale of two cities",
+                "date":"22nd of Nov 2016",
+                "time":"15:30",
+                "cover":"http://antertain.org/processing/imgs/concordia.png"
+            },
+            "Proeflokaal":{
+                "id":"1532652646966790",
+                "name":"Chouffe Party",
+                "date":"26th of Sep 2016",
+                "time":"20:00",
+                "cover":"http://antertain.org/processing/imgs/proeflokaal.png"
+            },
+            "Friends":{
+                "id":"414585838746347",
+                "name":"Café Friends Beer Pong toernooi",
+                "date":"5th of Sep 2016",
+                "time":"20:00",
+                "cover":"http://antertain.org/processing/imgs/friends.png"
+            },
+            "Rocks":{
+                "id":"1635856000071906",
+                "name":"Midweek Metal: Deadly Alliance / LEO / The Shiva Hypothesis",
+                "date":"6th of Jul 2016",
+                "time":"20:00",
+                "cover":"http://antertain.org/processing/imgs/rocks.png"
+            },
+            "Bolwerk":{
+                "id":"none",
+                "name":"Bolwerk doesn't have any events coming up.",
+                "date":"",
+                "time":"",
+                "cover":"http://antertain.org/processing/imgs/null.png"
+            }
+        }
+    ]
+}

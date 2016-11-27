@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Antertain -- About</title>
+  	
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#2b2d3d">
+  	<meta name="viewport" content="width=device-width; maximum-scale=1; minimum-scale=1;" />
+  	
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/png">
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body class="aboutB">
+
+    <header class="mainHeader">
+      <nav id="menu">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="vis.php">Data Visualisations</a></li>
+          <li><a href="index.php">Home</a></li>
+
+          <div class="logo">
+            <a href="index.php"><img src="img/logo.svg" alt="Logo"></a>
+          </div>
+
+        </ul>
+      </nav>  
+    </header>
+  	
+    <div class="contentAbout">
+    <div class="headerImgAbout"><img src="img/headerimg.png"></div>
+    <div class="aboutText">
+      <div class="groupImg">
+        <img src="img/groupImg.jpg" alt="Group Image">
+      </div>
+      <h2>We are:</h2>
+
+      <ul class="aboutList">
+        <li>Anita - Designer</li>
+        <li>Jordan - Back-end Programmer </li>
+        <li>Ronald - Video, Programmer Processing</li>
+        <li>Malte - Programmer, Front-end development</li>
+        <li>Kathi - Concepting, Marketing, Planning </li>
+      </ul>
+
+      <h2>Installation </h2>
+      <p>Discover your city and find out about great events! - Culture Map shows you everything you need to know about the social life of Enschede.</p>
+      <h2>Project description</h2>
+      <p>In cooperation with Brid.ge, Tech for further and Smart Cities we created an interactive installation that helps to make the city center of Enschede more attractive with the use of Big Data. Additionally we  created an online application that will work in combination with the physical installation and gives users information about certain places in the city. </p>
+      <h2>The Reason</h2>
+      <p>The role of the city centre is changing. Cities are struggling with a lack of occupancy and a drop in the number of visitors to the city centre. Local authorities are looking for solutions to make cities more attractive. They are experimenting with innovative applications in the hope of making the city centre a more attractive place to live and work in. 
+      During our research we focused on gaining information about event related issues. We found out that a lot of people would like to go out and visit events but they do not know what is going on and where to search for it. So our goal is to bring the events to the people.</p>
+      <h2>Technology How does it work?</h2>
+      <p>Each event location has conductive material on the top of the building to detect the user's choice and to display the matching QR-Code. Once the user has chosen a location the building lights up. Then the QR-code is being shown on a screen next to the control panels.
+      After scanning the QR-Code the user gets information about the selected location as well as the event taking place. Additionally we add information about the weather.
+
+      We are making use of the following API’s:
+        <ul>
+          <li>Facebook Graph API</li>
+          <li>Simple Weather API which uses Yahoo Weather</li>
+        </ul>
+      </p>
+
+      <p>By using a PIR-Sensor we detect motion to get the attention from people passing by. To collect data we track what locations get chosen most often and then display the collected data in the app.</p>
+    </div>
+
+
+    <div class="makingOf">
+      <iframe width="80%" height="500px" margin="0 auto" src="https://www.youtube.com/embed/V-ruuczNM9c" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+    </div>
+  </body>
+</html>
